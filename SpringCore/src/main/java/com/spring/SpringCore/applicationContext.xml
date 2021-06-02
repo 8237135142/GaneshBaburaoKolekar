@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="shap" class="com.spring.colls.ShapeCollection">
+	
+		<property name="shapeOfList">
+			<list>
+				<value>Triangle</value>
+				<value>Circle</value>
+				<value>Circle</value>
+				<value>Rectangle</value>
+			</list>
+		</property>
+
+
+		<property name="shapeOfSet">
+			<set>
+				<value>Triangle</value>
+				<value>Circle</value>
+				<value>Circle</value>
+				<value>Rectangle</value>
+			</set>
+		</property>
+
+
+		<property name="shapeOfMap">
+			<map>
+				<entry key="1" value="Triangle" />
+				<entry key="2" value="Circle" />
+				<entry key="3" value="Circle" />
+				<entry key="4" value="Rectangle" />
+			</map>
+		</property>
+
+
+		<property name="shapeOfProperties">
+			<props>
+				<prop key="triangle">Triangle</prop>
+				<prop key="circle1">Circle</prop>
+				<prop key="circle2">Circle</prop>
+				<prop key="rectangle">Rectangle</prop>
+			</props>
+		</property>
+
+	</bean>
+</beans>
