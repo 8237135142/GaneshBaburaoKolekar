@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="rh" class="com.spring.lookup.RequestHandler" scope="prototype"/>
+	<bean id="container" class="com.spring.lookup.MyContainer" scope="singleton">
+	<lookup-method name="getRequestHandler"/>
+	</bean>
+</beans>
