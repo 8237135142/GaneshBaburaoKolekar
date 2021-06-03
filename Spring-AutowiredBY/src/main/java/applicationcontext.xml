@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<context:component-scan base-package="com.hcl"></context:component-scan>
+
+	<bean id="company" class="com.hcl.Company" autowire="byName">
+		<property name="location">
+			<list>
+				<value>Mumbai</value>
+				<value>Hyderabad</value>
+				<value>Pune</value>
+				<value>Bangalore</value>
+			</list>
+		</property>
+
+		<property name="speciality">
+			<map>
+				<entry key="Mumbai" value="Marine Drive"/>
+				<entry key="Hyderabad" value="Biryani"/>
+				<entry key="Pune" value="Education Hub"/>
+				<entry key="Bangalore" value="Gardens"/>
+			</map>
+		</property>
+	</bean>
+
+	<bean id="address" class="com.hcl.Address">
+		<property name="city" value="Mumbai"></property>
+		<property name="country" value="india"></property>
+		<property name="pincode" value="400001"></property>
+	</bean>
+
+	<bean id="address2" class="com.hcl.Address">
+		<property name="city" value="Pune"></property>
+		<property name="country" value="india"></property>
+		<property name="pincode" value="411062"></property>
+	</bean>
+
+</beans>

@@ -1,0 +1,10 @@
+com\gk\service\impl\UserServiceImpl.class
+com\gk\service\UserService.class
+com\gk\entity\User.class
+com\gk\config\SwaggerConfig.class
+com\gk\DemoApplication.class
+com\gk\repository\UserRepository.class
+com\gk\entity\Address.class
+com\gk\repository\AddressRepository.class
+com\gk\dto\UserResponseDto.class
+com\gk\controller\UserController.class
